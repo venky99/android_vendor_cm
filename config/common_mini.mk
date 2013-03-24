@@ -6,7 +6,7 @@ ifneq ($(TARGET_BOOTANIMATION_NAME),)
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=hephappy
+    ro.rommanager.developerid=saartje
 
 #    ro.goo.board=$(TARGET_PRODUCT) \
 #    ro.goo.developerid=hephappy \
@@ -64,9 +64,9 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/apps/Superuser.apk:system/app/Superuser.apk
 
 # Bring in camera effects
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/cm/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+#PRODUCT_COPY_FILES +=  \
+#    vendor/cm/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+#    vendor/cm/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -98,10 +98,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
-    Basic \
-    NoiseField \
-    Galaxy4 \
-    PhaseBeam
+    Basic
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
@@ -109,7 +106,6 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
     CMFileManager \
     Music \
     Apollo
