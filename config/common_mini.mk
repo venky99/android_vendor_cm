@@ -99,8 +99,10 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
     Basic \
+    HoloSpiralWallpaper \
     NoiseField \
     Galaxy4 \
+    VisualizationWallpapers \
     PhaseBeam
 
 # Custom CM packages
